@@ -26,7 +26,7 @@ SITE_URL = "http://miquella.com.ar/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://miquella.com.ar/"
 BLOG_EMAIL = "gheize@gmail.com"
-BLOG_DESCRIPTION = "Prohibido prohibir"  # (translatable)
+BLOG_DESCRIPTION = "Quella proviene de la palabra quechua Ama Quella (No seas haragán)"  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -84,14 +84,14 @@ BLOG_DESCRIPTION = "Prohibido prohibir"  # (translatable)
 # in the default language will be shown instead.
 
 # What is the default language?
-DEFAULT_LANG = "en"
+DEFAULT_LANG = "es"
 
 # What other languages do you have?
 # The format is {"translationcode" : "path/to/translation" }
 # the path will be used as a prefix for the generated pages location
 TRANSLATIONS = {
     DEFAULT_LANG: "",
-    "es": "./es",
+    "en": "./en",
 }
 
 # What will translated input files be named like?
@@ -131,20 +131,21 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/archive.html", "Archive"),
-        ("/categories/", "Tags"),
-        ("/rss.xml", "RSS feed"),
+        ("/archive.html", "Archivo"),
+        ("/categories/", "Etiquetas"),
+        ("/rss.xml", "Canal RSS"),
     ),
 
-    "es": (
-        ("/es/archive.html", "Archivo"),
-        ("/es/categories/", "Etiquetas"),
-        ("/es/rss.xml", "Canal RSS"),
+    "en": (
+        ("/en/archive.html", "Archive"),
+        ("/en/categories/", "Tags"),
+        ("/en/rss.xml", "RSS feed"),
     ),
 }
 
 # Name of the theme to use.
-THEME = "bootstrap3"
+# THEME = "bootstrap3"
+THEME = "bootstrap-jinja"
 
 # Primary color of your theme. This will be used to customize your theme and
 # auto-generate related colors in POSTS_SECTION_COLORS. Must be a HEX value.
@@ -187,7 +188,6 @@ PAGES = (
     ("stories/*.txt", "stories", "story.tmpl"),
     ("stories/*.html", "stories", "story.tmpl"),
 )
-
 
 # Below this point, everything is optional
 
@@ -289,11 +289,11 @@ COMPILERS = {
 # Nikola supports logo display.  If you have one, you can put the URL here.
 # Final output is <img src="LOGO_URL" id="logo" alt="BLOG_TITLE">.
 # The URL may be relative to the site root.
-# LOGO_URL = ''
+# LOGO_URL = "<img src="LOGO_URL" id="logo" alt="BLOG_TITLE">"
 
 # If you want to hide the title of your website (for example, if your logo
 # already contains the text), set this to False.
-# SHOW_BLOG_TITLE = True
+SHOW_BLOG_TITLE = False
 
 # Writes tag cloud data in form of tag_cloud_data.json.
 # Warning: this option will change its default value to False in v8!
@@ -358,7 +358,7 @@ POSTS_SECTIONS = True
 # output / TRANSLATION[lang] / TAG_PATH / tag.html (list of posts for a tag)
 # output / TRANSLATION[lang] / TAG_PATH / tag.xml (RSS feed for a tag)
 # (translatable)
-# TAG_PATH = "categories"
+TAG_PATH = "tags"
 
 # See TAG_PATH's "list of tags" for the default setting value. Can be overwritten
 # here any path relative to the output directory.
@@ -471,11 +471,11 @@ HIDDEN_CATEGORIES = []
 # If you do not want to display an author publicly, you can mark it as hidden.
 # The author will not be displayed on the author list page and posts.
 # Tag pages will still be generated.
-HIDDEN_AUTHORS = ['Guest']
+#HIDDEN_AUTHORS = ['Guest']
 
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
-# INDEX_PATH = ""
+INDEX_PATH = "posts"
 
 # Optional HTML that displayed on “main” blog index.html files.
 # May be used for a greeting. (translatable)
@@ -795,13 +795,13 @@ CODE_COLOR_SCHEME = 'default'
 # FAVICONS contains (name, file, size) tuples.
 # Used to create favicon link like this:
 # <link rel="name" href="file" sizes="size"/>
-# FAVICONS = (
-#     ("icon", "/favicon.ico", "16x16"),
-#     ("icon", "/icon_128x128.png", "128x128"),
-# )
+FAVICONS = (
+ ("icon", "/favicon.ico", "16x16"),
+ ("icon", "/icon_128x128.png", "128x128"),
+)
 
 # Show teasers (instead of full posts) in indexes? Defaults to False.
-# INDEX_TEASERS = False
+INDEX_TEASERS = True
 
 # HTML fragments with the Read more... links.
 # The following tags exist and are replaced for you:
@@ -832,10 +832,15 @@ FEED_LINKS_APPEND_QUERY = False
 
 # A HTML fragment describing the license, for the sidebar.
 # (translatable)
-LICENSE = ""
+LICENSE = """
+<a class="license" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+    <i class="cc-a" aria-hidden="true"></i>
+    <i class="cc-b" aria-hidden="true"></i>
+</a>
+"""
 # I recommend using the Creative Commons' wizard:
 # https://creativecommons.org/choose/
-# LICENSE = """
+#LICENSE = """
 # <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 # <img alt="Creative Commons License BY-NC-SA"
 # style="border-width:0; margin-bottom:12px;"
@@ -843,7 +848,7 @@ LICENSE = ""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         {license}'
+CONTENT_FOOTER = 'Powered by         <a href="https://getnikola.com" rel="nofollow" class="icon-nikola"></a>         {license}'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
@@ -1014,14 +1019,15 @@ MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 
 # Show link to source for the posts?
 # Formerly known as HIDE_SOURCELINK (inverse)
-# SHOW_SOURCELINK = True
+SHOW_SOURCELINK = False
+
 # Copy the source files for your pages?
 # Setting it to False implies SHOW_SOURCELINK = False
 # COPY_SOURCES = True
 
 # Modify the number of Post per Index Page
 # Defaults to 10
-# INDEX_DISPLAY_POST_COUNT = 10
+INDEX_DISPLAY_POST_COUNT = 6
 
 # By default, Nikola generates RSS files for the website and for tags, and
 # links to it.  Set this to False to disable everything RSS-related.
@@ -1170,7 +1176,7 @@ UNSLUGIFY_TITLES = True
 # If webassets is installed, bundle JS and CSS into single files to make
 # site loading faster in a HTTP/1.1 environment but is not recommended for
 # HTTP/2.0 when caching is used. Defaults to True.
-# USE_BUNDLES = True
+USE_BUNDLES = False
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
