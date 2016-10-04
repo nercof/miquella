@@ -118,15 +118,7 @@
   <lastmod>2016-10-04T03:39:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://miquella.com.ar/en/galleries/rss.xml</loc>
-  <lastmod>2016-10-04T03:39:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://miquella.com.ar/en/rss.xml</loc>
-  <lastmod>2016-10-04T03:39:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://miquella.com.ar/galleries/rss.xml</loc>
   <lastmod>2016-10-04T03:39:00Z</lastmod>
  </sitemap>
  <sitemap>
@@ -135,6 +127,6 @@
  </sitemap>
  <sitemap>
   <loc>http://miquella.com.ar/sitemap.xml</loc>
-  <lastmod>2016-10-04T03:40:00Z</lastmod>
+  <lastmod>2016-10-04T23:33:00Z</lastmod>
  </sitemap>
 </sitemapindex>
