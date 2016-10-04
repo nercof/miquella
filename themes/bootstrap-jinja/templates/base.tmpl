@@ -21,9 +21,12 @@
                 Menu <i class="fa fa-bars"></i>
             </button>
             <a class="brand" href="{{ abs_link(_link("root", None, lang)) }}">
-
             {% if logo_url %}
-                <i class="fa fa-home" id="home">
+                <img src="{{ logo_url }}" alt="{{ blog_title }}" id="logo">
+            {% endif %}
+
+            {% if show_blog_title %}
+                <span id="blog-title">{{ blog_title }}</span>
             {% endif %}
             </a>
         </div>
@@ -74,7 +77,7 @@
         </div>
     </div>
     <!--End of body content-->
-    <hr></hr>
+    <hr>
 </div>
 <footer>
         <div class="container">
