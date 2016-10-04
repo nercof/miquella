@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://miquella.com.ar/</loc>
-  <lastmod>2016-10-04T03:39:00Z</lastmod>
+  <lastmod>2016-10-04T23:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://miquella.com.ar/2015/</loc>
@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>http://miquella.com.ar/archive.html</loc>
-  <lastmod>2016-10-04T03:39:00Z</lastmod>
+  <lastmod>2016-10-04T23:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://miquella.com.ar/categories/</loc>
@@ -95,7 +95,7 @@
  </url>
  <url>
   <loc>http://miquella.com.ar/en/archive.html</loc>
-  <lastmod>2016-10-04T03:39:00Z</lastmod>
+  <lastmod>2016-10-04T23:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://miquella.com.ar/en/categories/</loc>
@@ -158,12 +158,8 @@
   <lastmod>2016-10-04T03:39:00Z</lastmod>
  </url>
  <url>
-  <loc>http://miquella.com.ar/en/galleries/</loc>
-  <lastmod>2016-10-04T03:39:00Z</lastmod>
- </url>
- <url>
   <loc>http://miquella.com.ar/en/index-1.html</loc>
-  <lastmod>2016-10-04T03:39:00Z</lastmod>
+  <lastmod>2016-10-04T23:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://miquella.com.ar/en/posts/budin-vegano-banana-algarroba-y-mas/</loc>
@@ -236,16 +232,8 @@
   <xhtml:link rel="alternate" hreflang="es" href="http://miquella.com.ar/stories/home/" />
  </url>
  <url>
-  <loc>http://miquella.com.ar/galleries/</loc>
-  <lastmod>2016-10-04T03:39:00Z</lastmod>
- </url>
- <url>
   <loc>http://miquella.com.ar/index-1.html</loc>
-  <lastmod>2016-10-04T03:39:00Z</lastmod>
- </url>
- <url>
-  <loc>http://miquella.com.ar/listings/</loc>
-  <lastmod>2016-10-04T03:39:00Z</lastmod>
+  <lastmod>2016-10-04T23:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://miquella.com.ar/posts/budin-vegano-banana-algarroba-y-mas/</loc>
