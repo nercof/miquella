@@ -130,7 +130,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 #          else they won’t be highlighted when active.
 
 NAVIGATION_LINKS = {
-    DEFAULT_LANG: (
+    DEFAULT_LANG: (        
         ("/archive.html", "Archivo"),
         ("/categories/", "Etiquetas"),
         ("/rss.xml", "Canal RSS"),
@@ -289,11 +289,11 @@ COMPILERS = {
 # Nikola supports logo display.  If you have one, you can put the URL here.
 # Final output is <img src="LOGO_URL" id="logo" alt="BLOG_TITLE">.
 # The URL may be relative to the site root.
-# LOGO_URL = "<img src="LOGO_URL" id="logo" alt="BLOG_TITLE">"
+# LOGO_URL = ''
 
 # If you want to hide the title of your website (for example, if your logo
 # already contains the text), set this to False.
-SHOW_BLOG_TITLE = False
+# SHOW_BLOG_TITLE = True
 
 # Writes tag cloud data in form of tag_cloud_data.json.
 # Warning: this option will change its default value to False in v8!
@@ -358,7 +358,7 @@ POSTS_SECTIONS = True
 # output / TRANSLATION[lang] / TAG_PATH / tag.html (list of posts for a tag)
 # output / TRANSLATION[lang] / TAG_PATH / tag.xml (RSS feed for a tag)
 # (translatable)
-TAG_PATH = "tags"
+# TAG_PATH = "categories"
 
 # See TAG_PATH's "list of tags" for the default setting value. Can be overwritten
 # here any path relative to the output directory.
@@ -475,7 +475,7 @@ HIDDEN_CATEGORIES = []
 
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
-INDEX_PATH = "posts"
+# INDEX_PATH = ""
 
 # Optional HTML that displayed on “main” blog index.html files.
 # May be used for a greeting. (translatable)
