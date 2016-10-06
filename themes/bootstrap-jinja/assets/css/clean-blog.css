@@ -174,25 +174,31 @@ hr.small {
 }
 .intro-header {
   background-color: #777777;
-  background-image: url('images/home-bg.jpg');
+  background-image: url('images/home-bg.png');
   background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   margin-bottom: 50px;
+  background-position: center -90px;
+}
+.navbar-header .fa-home{
+  color: white;
+  font-size: 2em;
+  padding: 15px 0;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
-  padding: 100px 0 50px;
+  padding: 70px 0 50px;
   color: white;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0;
+    padding: 70px 0;
   }
 }
 .intro-header .site-heading,
