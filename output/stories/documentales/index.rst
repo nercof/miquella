@@ -11,9 +11,6 @@
 Documentales
 ============
 
-En esta sección mencionare de acuerdo a una clasificación personal los documentales
-que ultimamente fui descubriendo como interesantes a tener en cuenta.
-
 Reflexión
 =========
 
