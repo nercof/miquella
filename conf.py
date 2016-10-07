@@ -26,7 +26,7 @@ SITE_URL = "http://miquella.com.ar/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://miquella.com.ar/"
 BLOG_EMAIL = "gheize@gmail.com"
-BLOG_DESCRIPTION = "Quella proviene de la palabra quechua Ama Quella (No seas haragán)"  # (translatable)
+BLOG_DESCRIPTION = "La ignorancia no tiene principio, pero tiene fin, el conocimiento tiene principio, pero no fin. BKS Iyengar"  # (translatable)
 
 # Nikola is multilingual!
 #
